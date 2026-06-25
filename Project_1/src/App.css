@@ -1,0 +1,23 @@
+button{
+    padding: 10px;
+    font-size: 14px;
+    background-color: #060606;
+    color: white;
+    border: 1px solid whitesmoke;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover{
+    background-color: whitesmoke;
+    border: 1px solid black;
+    color: black;
+    font-weight: normal;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+hr{
+    padding: 0 !important;
+}
