@@ -27,6 +27,24 @@ A simple application demonstrating state management in React using hooks.
 ---
 
 ## 🛠️ Environment & Tools
-- **Library:** React.js
+- **Library:** React.js, Vite
 - **Version Control:** Git & GitHub
 
+---
+
+## ⚙️ Development Guide: Project Execution & Configuration 
+
+### How to Run the Project
+To spin up the development servers, open your terminal, navigate to the specific project directory, and execute the corresponding command.
+
+* **Vite + React Setup:**
+  ```bash
+  cd Project_Folder
+  npm create vite@latest 
+  npm run dev
+  ```
+* **React Setup:**
+  ```bash
+  cd Project_Folder
+  npm create-react-app 
+  npm start
