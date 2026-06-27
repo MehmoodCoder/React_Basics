@@ -27,7 +27,7 @@ outputType = "webview"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd Tailwind_Project && npm run dev"
+args = "cd Project_1 && npm run dev"
 waitForPort = 5000
 
 [[ports]]
