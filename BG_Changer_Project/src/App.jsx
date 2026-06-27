@@ -9,6 +9,7 @@ function App() {
 
   return (
     <>
+      <h1 className='bg-green-200 mb-5 underline'>Alllow</h1>
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
