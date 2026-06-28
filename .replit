@@ -27,7 +27,7 @@ outputType = "webview"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd BG_Changer_Project && npm run dev"
+args = "cd Password_Generator && npm run dev"
 waitForPort = 5000
 
 [[ports]]
