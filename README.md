@@ -22,28 +22,11 @@ A multi-project React learning repository covering core concepts and progressive
 
 ## 💻 Projects Included
 
-### 🔧 Custom React (Vanilla JS)
-> **Folder:** `Custom_React/`
-
-A custom React-like renderer built from scratch using plain JavaScript — no library involved.
-- **Covers:** How React internally creates DOM elements from a virtual element object
-- **Concepts:** `createElement`, `setAttribute`, recursive DOM rendering logic
-
----
-
-### ⚡ Vite + React Setup
-> **Folder:** `Vite_React/`
-
-First Vite-powered React project — understanding the Vite + React toolchain from scratch.
-- **Covers:** Project scaffolding, JSX, component basics, hot module replacement (HMR)
-
----
-
 ### 🔢 Counter Application
 > **Folder:** `Project_1/`
 
 Classic beginner React app demonstrating core state management.
-- **Features:** Increment, Decrement, Reset
+- **Features:** Increment, Decrement
 - **Concepts:** `useState`, event handlers, controlled UI updates
 
 ---
@@ -84,16 +67,6 @@ Real-time currency converter using a live exchange rate API.
 
 ---
 
-### 🗺️ React Router Project
-> **Folder:** `React_Router_Project/`
-
-A multi-page SaaS-style landing site built with React Router v7.
-- **Features:** Home page with hero & download CTA, About page, Contact Us page, shared Header & Footer layout
-- **Pages:** `Home`, `About`, `ContactUs`
-- **Shared Layout:** `Header` (navbar with active link styling), `Footer`
-- **Concepts:** `createBrowserRouter`, `RouterProvider`, `<Outlet>`, `<Link>`, `<NavLink>`, nested routes, route-based code splitting
-
----
 
 ## 🛠️ Environment & Tools
 
@@ -106,7 +79,6 @@ A multi-page SaaS-style landing site built with React Router v7.
 | **Tailwind CSS** | `^4.3.x` | Utility-first CSS framework |
 | **@tailwindcss/vite** | `^4.3.x` | Tailwind v4 Vite plugin |
 | **react-router-dom** | `^7.18.1` | Client-side routing |
-| **oxlint** | `^1.69.0` | Fast JavaScript/React linter |
 | **Node.js / npm** | Latest LTS | Runtime & package manager |
 | **Git & GitHub** | — | Version control & remote hosting |
 
@@ -120,16 +92,14 @@ Navigate into the project folder and start the dev server:
 
 ```bash
 cd Project_Folder
-npm install
 npm run dev
 ```
 
 ### Scaffolding a New Vite + React Project
 
 ```bash
-npm create vite@latest project-name
+npm create vite@latest
 cd project-name
-npm install
 npm run dev
 ```
 
@@ -158,9 +128,8 @@ Add to `index.css`:
 Installed using the official React Router CLI as per [reactrouter.com](https://reactrouter.com):
 
 ```bash
-npx create-react-router@latest my-app
-cd my-app
-npm install
+npx create-react-router@latest
+cd my-project
 npm run dev
 ```
 
@@ -168,24 +137,4 @@ Or add to an existing Vite project:
 
 ```bash
 npm install react-router-dom
-```
-
-Basic setup in `main.jsx`:
-```jsx
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Layout />,
-    children: [
-      { path: '', element: <Home /> },
-      { path: 'about', element: <About /> },
-    ],
-  },
-])
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
-)
 ```
